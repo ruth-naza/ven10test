@@ -41,11 +41,11 @@ router.get('/', function(req, res) {
     }
 
     builder
-    .limit(100)
     .then(result => {
        res.json({
            status:"ok",
            data: {
+               count: result.length,
                result: result
            }
        })
