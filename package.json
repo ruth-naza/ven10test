@@ -4,7 +4,7 @@
   "description": "Running react and express in one folder",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --no-cache  --detectOpenHandles --runInBand --forceExit",
     "start": "node server.js",
     "server": "nodemon server.js"
   },
@@ -14,10 +14,12 @@
     "concurrently": "^5.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "jest": "^25.4.0",
     "knex": "^0.21.0",
     "pg": "^8.0.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
   }
 }
