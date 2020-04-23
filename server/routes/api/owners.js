@@ -41,6 +41,7 @@ router.get('/', function(req, res) {
     }
 
     builder
+    .limit(200)
     .then(result => {
        res.json({
            status:"ok",
